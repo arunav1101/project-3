@@ -3,7 +3,7 @@ const express = require('express');
 const route = express.Router();
 const passport = require('passport');
 
-const config ={
+const config = {
 	clientHost: "https://bootcampsite.herokuapp.com"
 }
 
