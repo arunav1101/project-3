@@ -4,8 +4,9 @@ const route = express.Router();
 const passport = require('passport');
 
 const config ={
-	clientHost: (process.env.NODE_ENV === "production") ? "https://bootcampsite.herokuapp.com" : "http://localhost:3000"
+	clientHost: "https://bootcampsite.herokuapp.com"
 }
+
 
 route.get(
 	'/google',
