@@ -2,8 +2,10 @@
 const express = require('express');
 const route = express.Router();
 const passport = require('passport');
-const config = require("../config/config")
 
+const config ={
+	clientHost: (process.env.NODE_ENV === "production") ? process.env.clientHost : "http://localhost:3000"
+}
 
 route.get(
 	'/google',

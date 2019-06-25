@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import config from "../../config/config"
+import config from "../../config/config";
 import "./style.css"
 
 class Form extends Component {
 
     render() {
-        console.log('config.serverHost',config.serverHost);
         return (
             <div className="container">
                 <form>
@@ -48,5 +47,4 @@ class Form extends Component {
         );
     }
 }
-//<a href={(this.props.isAuth)? "/auth/google":""}>
 export default Form;

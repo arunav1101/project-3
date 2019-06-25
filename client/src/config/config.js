@@ -1,5 +1,5 @@
 const settings = {
-    serverHost: process.env.serverHost || "https://bootcampsite.herokuapp.com",
+    serverHost: (process.env.NODE_ENV === "production") ? process.env.serverHost : "http://localhost:3001",
     batchId:["OREPOR201901FSF3"]
 }
 
