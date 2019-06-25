@@ -5,6 +5,7 @@ import "./style.css"
 class Form extends Component {
 
     render() {
+        console.log('config.serverHost',config.serverHost);
         return (
             <div className="container">
                 <form>
