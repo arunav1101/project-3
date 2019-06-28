@@ -25,7 +25,7 @@ class Profile extends Component {
       await API.getUserByGoogleId(loggedInUserId)
       .then(async (res) =>{
         await this.setState({ loggedUser: res.data })
-        console.log('datta',loggedUser)
+        console.log('datta',this.state.loggedUser)
       })
     }
   
