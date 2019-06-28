@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
 require("./client/src/Passport/passport")(passport);
 app.use(passport.initialize());
 app.use(passport.session());
-const authRoutes = require("./client/src/Passport/auth");
+const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
 // //Declare Global Variables
 app.use((req, resp, next) => {
