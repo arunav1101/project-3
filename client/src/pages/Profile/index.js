@@ -49,7 +49,7 @@ const {dataset} =target;
   filterLoggedUser= async ()=>{
    await this.getUserDetails();
 const userFilter =(this.state.loggedUser.map(userdetails=>userdetails.firstName +' '+ userdetails.lastName ));
-this.setState({ filterUser: userFilter[0].toLocaleLowerCase().trim() })
+this.setState({ filterUser: userFilter[0].toLowerCase().trim() })
   }
   
   render() {
@@ -66,7 +66,7 @@ this.setState({ filterUser: userFilter[0].toLocaleLowerCase().trim() })
                            <ProfileCard 
                            results={this.state.stud.filter(
                              (myfilter)=>
-                                myfilter.name.toLocaleLowerCase().trim()!==this.state.filterUser)} 
+                                myfilter.name.toLowerCase().trim()!==this.state.filterUser)} 
                                 />
 
 </div>
