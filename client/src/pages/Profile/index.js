@@ -21,11 +21,11 @@ class Profile extends Component {
 
     getUserDetails=async ()=>{
       const loggedInUserId = window.location.toString().split("/").pop().split('#')[0];
+     console.log(loggedInUserId"loggedInUserId",)
       await API.getUserByGoogleId(loggedInUserId)
       .then(async (res) =>{
         await this.setState({ loggedUser: res.data })
-       
-
+        console.log('datta',loggedUser)
       })
     }
   

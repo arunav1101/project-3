@@ -1,9 +1,4 @@
 import axios from "axios";
-// import config from "../config/config"
-
-
-// axios.defaults.baseURL = 'http://localhost:3001';
-// console.log(config.serverHost)
 
 export default {
   // Gets all students
