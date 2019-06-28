@@ -21,7 +21,7 @@ class Profile extends Component {
 
     getUserDetails=async ()=>{
       const loggedInUserId = window.location.toString().split("/").pop().split('#')[0];
-     console.log(loggedInUserId"loggedInUserId",)
+     console.log("loggedInUserId", loggedInUserId);
       await API.getUserByGoogleId(loggedInUserId)
       .then(async (res) =>{
         await this.setState({ loggedUser: res.data })
@@ -77,54 +77,3 @@ this.setState({ filterUser: userFilter[0].toLowerCase().trim() })
 }
 
 export default Profile;
-
-//*** Card structure by NASh */
-
-// import React, { Component } from "react";
-// import Sidenav from '../../components/Sidenav';
-// import ProfileCard from '../../components/ProfileCard';
-// import './style.css';
-
-// class Profile extends Component{
-
-//     componentDidMount() {
-//         /* Hook for initializing stuff */
-
-//     }
-    
-//     render(){
-//         return (
-//             <div>
-//                 {/* Profile page components go here */}
-                
-//                 <div className="d-flex flex-row">
-//                     <div className="d-flex flex-column align-self-center mr-5">
-//                         <Sidenav />   
-//                     </div>
-//                     <div className="d-flex flex-column mt-5">
-                        
-//                         <div className="row text-center mt-5" id="cardDiv">
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                             <ProfileCard />
-//                         </div>
-                        
-//                     </div>
-//                 </div>        
-                    
-                
-//             </div>
-//         )
-//     }
-// }
-
-// export default Profile;
